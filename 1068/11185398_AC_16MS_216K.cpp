@@ -15,16 +15,12 @@ int main(){
         memset(c, 0, sizeof(c));
         m = 1;
         cin >> n;
-        //cin >> a[0];
-        //m = a[0] + 2;
-        //b[0] = m - 1; 
-        //c[m - 1] = 1;
 
         for (i = 1; i <= n; i++){
             cin >> a[i];
             m = m + a[i] - a[i - 1] + 1;
             b[i] = m - 1;
-            c[m - 1] = 1; //right par
+            c[m - 1] = 1;
         }
 
         for (i = 1; i <= n; i++){
